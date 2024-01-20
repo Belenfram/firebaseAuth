@@ -1,0 +1,61 @@
+[debug] [2024-01-20T04:24:41.892Z] ----------------------------------------------------------------------
+[debug] [2024-01-20T04:24:41.893Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Yeimy Belen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-20T04:24:41.894Z] CLI Version:   13.0.3
+[debug] [2024-01-20T04:24:41.894Z] Platform:      win32
+[debug] [2024-01-20T04:24:41.894Z] Node Version:  v18.16.0
+[debug] [2024-01-20T04:24:41.895Z] Time:          Fri Jan 19 2024 22:24:41 GMT-0600 (hora estándar central)
+[debug] [2024-01-20T04:24:41.895Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-20T04:24:41.897Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-01-20T04:24:41.932Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-20T04:24:41.933Z] > authorizing via signed-in user (belenho.ti22@utsjr.edu.mx)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Yeimy Belen\Documents\Universidad\Apps Web\Login
+
+[debug] [2024-01-20T04:24:42.063Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-01-20T04:24:42.063Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-20T04:26:24.647Z] > refreshing access token with scopes: []
+[debug] [2024-01-20T04:26:24.648Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-20T04:26:24.648Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-20T04:26:24.791Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-01-20T04:26:24.791Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-20T04:26:24.801Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-01-20T04:26:25.183Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-01-20T04:26:25.183Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project aweb40-1884f (aweb40) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-01-20T04:26:37.757Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-01-20T04:26:37.757Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/aweb40-1884f
+[debug] [2024-01-20T04:26:38.143Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com 200
+[debug] [2024-01-20T04:26:38.143Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-01-20T04:26:38.144Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-01-20T04:26:38.144Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/aweb40-1884f
+[debug] [2024-01-20T04:26:38.835Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-01-20T04:26:38.835Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-01-20T04:26:48.842Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-01-20T04:26:48.843Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/aweb40-1884f
+[debug] [2024-01-20T04:26:49.166Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com 200
+[debug] [2024-01-20T04:26:49.166Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/aweb40-1884f/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-01-20T04:26:49.169Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aweb40-1884f [none]
+[debug] [2024-01-20T04:26:49.362Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aweb40-1884f 200
+[debug] [2024-01-20T04:26:49.362Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aweb40-1884f {"projectId":"aweb40-1884f","projectNumber":"269676533678","displayName":"aweb40","name":"projects/aweb40-1884f","resources":{"hostingSite":"aweb40-1884f"},"state":"ACTIVE","etag":"1_2a18073f-7bdb-4dfe-9f83-5e9b69f0fb16"}
