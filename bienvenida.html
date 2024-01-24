@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenid@</title>
+  <!-- Agrega tus estilos CSS aquí si es necesario -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    #welcomeBox {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    #logoutButton {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #dc3545;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcomeBox">
+    <h1>Bienvenido</h1>
+    <p>Has accedido con éxito a tu cuenta</p>
+    <button id="logoutButton" name="logoutButton">Cerrar sesión</button>
+  </div>
+  <script type="module" src="js/cierre.js"></script>
+</body>
+</html>

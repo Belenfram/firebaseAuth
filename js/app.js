@@ -22,14 +22,21 @@ var firebaseConfig = {
     e.preventDefault();
     const email = document.querySelector("#email").value;
     const password = document.querySelector("#password").value;
+
+    console.log('Correo: '+email+' Contraseña: '+password);
   
     signInWithEmailAndPassword(auth,email,password).then(cred=>{
-      alert('Credenciales Correctas/signIn');
+      alert('Credenciales Correctas');
       console.log('credeciales correctas');
+      window.location.href = '/bienvenida.html';
       //console.log(cred.user)
     }).catch(e=>{
       const errorCode = e.code;
       console.log(errorCode);
+      if (errorCode==='auth/invalid-credential') {
+        console.log("Credenciales invalidas");
+        alert("Inicio de sesión fallido, verifique su información");
+      }
     })
   
   });
